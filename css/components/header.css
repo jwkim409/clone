@@ -1,0 +1,31 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  /* 주축에서 양옆으로 펴짐 */
+  position: sticky;
+  /* 친구, 채팅창이 많아져도 헤더는 그대로 있을 수 있게 해줌. */
+  top: 0;
+  z-index: 1;
+  /* nav바 보다 작게해서 nav바가 더 잘 보이게 */
+  padding: 12px;
+  background-color: white;
+  line-height: 36px;
+  /* 아이콘과 h3텍스트의 크기를 맞추기 위해서 */
+}
+
+.header__title{
+  margin: 0;
+  font-size: 1em;
+}
+
+.header__menu span{
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.header__menu span:hover{
+  background-color: #eaeaea;
+}

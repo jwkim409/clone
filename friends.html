@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코코넛톡 - 친구 목록</title>
+  <link href="./css/pages/common.css" rel="stylesheet">
+  <link href="./css/pages/friends.css" rel="stylesheet">
+  <link href="./css/components/navbar.css" rel="stylesheet">
+  <link href="./css/components/header.css" rel="stylesheet">
+  <link href="./css/components/userlist.css" rel="stylesheet">
+  <link href="./img/coconut.png" rel="icon">
+  <script src="https://kit.fontawesome.com/1eeb9c7575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a href="./friends.html" class="active">
+          <i class="fa-solid fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a href="./chats.html">
+          <i class="fa-solid fa-comment fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+
+    <div class="header">
+      <h3 class="header__title">친구</h3>
+      <div class="header__menu">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          &nbsp
+          <span><i class="fa-solid fa-user-plus"></i></span>
+      </div>
+    </div>
+
+    <div class="main">
+       <!-- 첫 번째는 내 프로필이 오게 -->
+      <div class="user my-profile">
+        <div class="user__column">
+          <div class="user__pic"></div>
+        </div>
+        <div class="user__column">
+          <p class="user__nick">Kim</p>
+          <p class="user__state">상태메시지</p>
+        </div>
+    </div>
+    <!-- 마이프로필과 친구프로필을 구별하기 위해 -->
+    <div class="friends__menu">
+        <span class="friends__menu__header">친구 1</span>
+      <div class="user-list">
+       <div class="user">
+          <div class="user__column">
+            <div class="user__pic"></div>
+          </div>
+          <!-- 유저가 가지고 있는 첫 번째 열. 사진 -->
+          <div class="user__column">
+            <p class="user__nick">친구 또는 채팅방 이름</p>
+            <p class="user__state">메시지 또는 상태</p>
+          </div>
+          <!-- 유저가 가지고 있는 두 번째 열. 친구.상태 -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

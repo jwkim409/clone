@@ -1,0 +1,98 @@
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: #d2daf1;
+}
+
+.chat-screen{
+  height: calc(100% - 160px);
+  overflow: auto; /* 내용이 넘칠 때 스크롤 추가 */
+}
+
+.chat-screen .chat-screen__bar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 100px;
+}
+
+.chat-user{
+  background-color: #f2f2f2;
+  /* hover 이벤트가 없는 것처럼 보이기 위해 색 뒤집어 씀 */
+}
+
+.chat-form{
+  height: 160px;
+  background-color: white;
+}
+
+.chat-form__plugin{
+  height: 40px;
+  background-color: #f2f2f2;
+}
+
+.chat-form__plugin .chat-form__icon{
+  margin: 0 0 0 15px;
+  line-height: 40px;
+}
+
+.chat-form .chat-form__field{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  /* 폼의 높이 160픽셀 아이콘 영역이 40픽셀이니 아이콘 영역은 120픽셀 */
+  font-size: 1em;
+}
+
+.chat-form .chat-form__msg{
+  width: calc(100% - 120px);
+  /* 전체 - 버튼크기 120픽셀... 100%는 상대적인 값이라 브라우저가 넓어져도 적용됨 */
+  height: 100px;
+  padding: 10px;
+  border: none;
+  resize: none;
+  /* 상자 크기 조절 none */
+}
+
+.chat-form .chat-form__msg:focus{
+  outline: none;
+}
+
+.chat-form .chat-form__bt{
+  width: 100px;
+  height: 98px;
+  background-color: #9ec4cf;
+  border-radius: 8px;
+  border: none;
+}
+
+.chat-form .chat-form__bt:active{
+  background-color: #6e8c95;
+}
+
+/* 말풍선 스타일 */
+.comment{
+  position: relative;
+  left: 20px;
+  width: 200px;
+  height: 50px;
+  list-style-type: none;
+  background-color: #9ec4cf;
+  padding: 10px;
+  margin: 0 0 10px 0;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+/* 말풍선 꼬리 삼각형 만들기 */
+.comment::after{
+  /* 요소를 본래 요소에 추가함 */
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border-right: 16px solid #9ec4cf;
+  border-bottom: 16px solid transparent;
+  /* transparent -> 투명하게 */
+}

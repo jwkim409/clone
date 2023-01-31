@@ -1,0 +1,23 @@
+.container{
+  margin-left: 70px;
+}
+
+.my-profile .user__pic{
+  width: 60px;
+  height: 60px;
+  background-color: #edcae1;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.friends__menu{
+  font-size: 0.8em;
+  margin: 10px 15px;
+  border-top: 1px solid #aeaeae;
+  /* 친구 1 위에 선 회색선 생김 */
+  padding-top: 15px;
+}
+
+.friends__menu__header{
+  color: #aeaeae;
+}

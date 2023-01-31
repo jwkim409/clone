@@ -1,0 +1,41 @@
+.user{
+  display: flex;
+  justify-content: flex-start;
+  /* 추축(가로)에서는 앞에서부터 배치 */
+  align-items: center;
+  /* 교차축(세로)에서는 가운데에 배치 */
+  padding: 16px;
+  position: relative;
+  /* user__time의 기준이 될 거임 */
+}
+
+.user:hover{
+  background-color: #f2f2f2;
+}
+
+.user__pic:not(.my-profile .user__pic){
+  /* 마이프로필 밑에 있는 유저픽(즉, 나의 프로필 사진)이 아닌 유저픽일 경우에만 스타일 적용 */
+  width: 50px;
+  height: 50px;
+  background-color: #c68a65;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+
+.user__nick{
+  margin: 5px;
+  font-size: 0.9em;
+}
+
+.user__state{
+  margin: 5px;
+  font-size: 0.8em;
+  color: #aeaeae;
+  overflow: hidden;
+  /* 상태메시지가 길어지면 ...처리 하려고 */
+  width: 50vw;
+  /* 50vw: 뷰포트(화면 크기) 너비의 50% */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* 여백이 연달아 있으면 그것을 하나의 여백으로 간주하여 처리함 ...처리 */
+}

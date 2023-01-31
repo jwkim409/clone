@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>코코넛톡 - 채팅</title>
+  <link href="./css/pages/common.css" rel="stylesheet">
+  <link href="./css/pages/chat.css" rel="stylesheet">
+  <link href="./css/components/userlist.css" rel="stylesheet">
+  <link href="./img/coconut.png" rel="icon">
+  <script src="https://kit.fontawesome.com/1eeb9c7575.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div class="container">
+    <div class="chat-screen">
+      <div class="chat-screen__bar">
+        <div class="user chat-user">
+          <div class="user__column">
+            <div class="user__pic"></div>
+          </div>
+          <div class="user__column">
+             <p class="user__nick">친구명</p>
+             <p class="user__state">
+              <i class="fa-sharp fa-solid fa-user"></i>2
+             </p>
+           </div>
+        </div>
+      </div>
+      <ul class="chat-screen__comments">
+        <li class="comment">내용은 아무거나</li>
+        <li class="comment">내용은 아무거나</li>
+        <li class="comment">내용은 아무거나</li>
+      </ul>
+    </div>
+
+    <form class="chat-form" onsubmit="return false;">
+      <!-- 전송 버튼 눌렀을 때 false가 작용하여 아무 일도 일어나지 않게 하겠다 -> 페이지가 새로고침 되지 않음. -->
+      <div class="chat-form__plugin">
+        <!-- 아이콘 사이의 간격 조절을 위해 각 아이콘에 클래스를 지정함 -->
+        <i class="fa-sharp fa-solid fa-face-smile chat-form__icon"></i>
+        <i class="fa-sharp fa-solid fa-paperclip chat-form__icon"></i>
+        <i class="fa-sharp fa-solid fa-calendar-check chat-form__icon"></i>
+      </div>
+      <div class="chat-form__field">
+        <textarea class="chat-form__msg"></textarea>
+        <input class="chat-form__bt" type="submit" value="전송"></input>
+      </div>
+    </form>
+
+ </div>
+</body>
+</html>
